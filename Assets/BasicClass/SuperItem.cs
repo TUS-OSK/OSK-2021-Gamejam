@@ -7,6 +7,7 @@ public class SuperItem : MonoBehaviour
 {
     public ItemData itemData;
     public virtual void checkHitObject(MobData data) { }
+    public virtual void Shot(Vector3 direction) { }
 }
 
 [System.Serializable]
