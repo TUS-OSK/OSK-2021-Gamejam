@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : SuperItem, SuperPlayer, Data
+public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,16 +15,14 @@ public class PlayerController : SuperItem, SuperPlayer, Data
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.position += new Vector3(0.3f, 0, 0);
+            transform.position += new Vector3(0.1f, 0, 0);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.position += new Vector3(-0.3f, 0, 0);
+            transform.position += new Vector3(-0.1f, 0, 0);
         }
 
     }
-
-    Touch(col.GetComponent<SuperItem>())
 
 
 }
