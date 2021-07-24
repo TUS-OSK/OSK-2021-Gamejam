@@ -4,24 +4,37 @@ using UnityEngine;
 
 public class Enemy : SuperEnemy
 {
-    // Start is called before the first frame update
+    public GameObject bullet;
+    Vector3 createPosition;
+
     void Start()
     {
         
     }
 
-    [SerializeField] GameObject enemyBulletPrefab;
-    [SerializeField] float shotInterval;
-    float timecount;
+    float c=0;
 
     void Update()
     {
-        timecount += Time.deltaTime;
-
-        if(timecount>=1)
+        c++;
+        if (c==20)
         {
-            timecount = 0;
-            Instantiable(enemyBulletPrefab, transform.position, Quaternion.identity);
+            c=0;
+            createPosition = transform.position;
+            createPosition.z += 1.0f;
+
+            Instantiate(bullet, createPosition, Quaternion.identity);
         }
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        GameObject obje = collision.gameObject;
+        SuperItem item = obje.GetComponent<SuperItem>();
+        if(item!=null)
+        {
+            this.Touch(item);
+        }
+        Debug.Log("test");
     }
 }
