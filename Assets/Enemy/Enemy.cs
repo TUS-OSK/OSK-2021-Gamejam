@@ -4,26 +4,23 @@ using UnityEngine;
 
 public class Enemy : SuperEnemy
 {
-    public GameObject bullet;
-    Vector3 createPosition;
 
     void Start()
     {
         
     }
 
-    float c=0;
+    public GameObject Bullet;
+    float time = 0f;
 
     void Update()
     {
-        c++;
-        if (c==20)
+        time += Time.deltaTime;
+        if(time>=0.5f)
         {
-            c=0;
-            createPosition = transform.position;
-            createPosition.z += 1.0f;
-
-            Instantiate(bullet, createPosition, Quaternion.identity);
+            time = 0f;
+            Instantiate(Bullet, this.transform.position + new Vector3(0,0,1.0f), Quaternion.identity);
+            
         }
     }
 
@@ -37,4 +34,6 @@ public class Enemy : SuperEnemy
         }
         Debug.Log("test");
     }
+
+
 }

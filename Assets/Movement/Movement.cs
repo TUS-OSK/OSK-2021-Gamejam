@@ -6,13 +6,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
+    float time = 0f;
+    public float zspeed;
 
     void Update()
     {
-        transform.position += new Vector3(0,0,-1f);
+        time = Time.deltaTime;
+        this.transform.position += new Vector3(0,0,zspeed*time);
     }
 }
