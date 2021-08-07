@@ -10,15 +10,12 @@ public class EnemyClockwise : MonoBehaviour
         {
             speed *= -1.0f;
         }
-
-        defPosition = transform.position;
     }
 
     public bool AntiClockwise = false;//チェックすると反時計回りになる
 
     public float speed;
     public float radius;
-    private Vector3 defPosition;
     float x;                         
     float z;
 
@@ -27,6 +24,6 @@ public class EnemyClockwise : MonoBehaviour
         x = radius * Mathf.Sin(Time.time * speed);
         z = radius * Mathf.Cos(Time.time * speed);
 
-        transform.position = new Vector3(x+defPosition.x,defPosition.y, z+defPosition.z);
+        this.transform.position += new Vector3(x,0,z);
     }
 }
