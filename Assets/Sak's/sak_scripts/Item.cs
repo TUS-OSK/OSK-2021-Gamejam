@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Item : SuperItem
 {
-    private Vector3 ukeVec3;
+    [SerializeField] private Vector3 ukeVec3;
 
     void Update()
     {

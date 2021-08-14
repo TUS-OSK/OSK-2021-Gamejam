@@ -12,6 +12,7 @@ public class Enemy : SuperEnemy
 
     public GameObject Bullet;
     float time = 0f;
+    [SerializeField] private Vector3 syahoukou;
 
     void Update()
     {
@@ -19,8 +20,8 @@ public class Enemy : SuperEnemy
         if(time>=0.5f)
         {
             time = 0f;
-            Instantiate(Bullet, this.transform.position + new Vector3(0,0,1.0f), Quaternion.identity);
-            
+            var daBullet = Instantiate(Bullet, this.transform.position + new Vector3(0,0,1.0f), Quaternion.identity).GetComponent<SuperItem>();
+            daBullet.Shot(syahoukou);
         }
     }
 
@@ -32,7 +33,7 @@ public class Enemy : SuperEnemy
         {
             this.Touch(item);
         }
-        Debug.Log("test");
+//        Debug.Log("test");
     }
 
 
