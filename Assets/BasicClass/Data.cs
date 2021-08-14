@@ -6,32 +6,20 @@ using UnityEngine;
 [System.Serializable]
 public class MobData
 {
-    //ここのプロパティは外部から触れない。メソッドを介して操作する
-    private int UnTouchHp = 0;
-    private bool UnTouchArive = true;
-
-    //ここを皆参照する
-    //{ get; }はプロパティという機能で、なんか入出力をどうこう出来る 詳しくはググろう
-    public int hp { get { return UnTouchHp; } }
-    public bool arive { get { return UnTouchArive; } }
+    //昔ここはプロパティを使っていたがあまり意味がなさそうなので普通のクラスにしてやりました
+    [SerializeField] public int hp;
+    [SerializeField] public bool arive;
     public void Damage(int damage)
     {
-        if (damage < UnTouchHp)
+        if (damage < hp)
         {
-            UnTouchHp -= damage;
+            hp -= damage;
         }
         else
         {
-            if (arive) UnTouchArive = false;
-            UnTouchHp = 0;
+            if (arive) arive = false;
+            hp = 0;
         }
-    }
-
-    public void setHp(int setHp, bool setArive)
-    {
-        UnTouchHp = setHp;
-        UnTouchArive = setArive;
-
     }
 }
 [System.Serializable]
