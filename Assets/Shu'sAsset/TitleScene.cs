@@ -16,7 +16,7 @@ public class TitleScene : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("OSK-2021-Gamejam");
         }
     }
 }
