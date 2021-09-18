@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Enemy : SuperEnemy
 {
-
-    void Start()
-    {
-        
-    }
+    public ObjectFlyer<SuperItem> flyer;
+    public Vector3 pos;
 
     public GameObject Bullet;
     float time = 0f;
+
+    public Vector3 direction;
+
+    void Start()
+    {
+        flyer = new ObjectFlyer<SuperItem>(Bullet.GetComponent<SuperItem>());
+    }
 
     void Update()
     {
@@ -19,8 +23,7 @@ public class Enemy : SuperEnemy
         if(time>=0.5f)
         {
             time = 0f;
-            Instantiate(Bullet, this.transform.position + new Vector3(0,0,1.0f), Quaternion.identity);
-            
+            flyer.GetMob(this.transform.position + new Vector3(0,0,1.0f),x => {x.Shot(direction);});
         }
     }
 
@@ -31,9 +34,9 @@ public class Enemy : SuperEnemy
         if(item!=null)
         {
             this.Touch(item);
+            if(this.mobData.hp<=0){
+                this.gameObject.SetActive(false);
+            }
         }
-        Debug.Log("test");
     }
-
-
 }

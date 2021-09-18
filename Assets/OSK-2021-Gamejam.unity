@@ -434,7 +434,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adaddddefb4ad4fbb9cddccec5eaa222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mobData:
+    hp: 10
+    arive: 0
+  pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
+  direction: {x: 0, y: 0, z: -1}
 --- !u!54 &316404752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -601,7 +606,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adaddddefb4ad4fbb9cddccec5eaa222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mobData:
+    hp: 10
+    arive: 0
+  pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
+  direction: {x: 0, y: 0, z: -1}
 --- !u!54 &782243991
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -787,7 +797,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adaddddefb4ad4fbb9cddccec5eaa222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mobData:
+    hp: 10
+    arive: 0
+  pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
+  direction: {x: 0, y: 0, z: -1}
 --- !u!1 &1816116793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,6 +1150,10 @@ PrefabInstance:
     - target: {fileID: 6840334013875499728, guid: ef5178cc1755b4748855327d7282fccb, type: 3}
       propertyPath: m_Name
       value: EnemyR
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840334013875499728, guid: ef5178cc1755b4748855327d7282fccb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6840334013875499729, guid: ef5178cc1755b4748855327d7282fccb, type: 3}
       propertyPath: m_RootOrder
