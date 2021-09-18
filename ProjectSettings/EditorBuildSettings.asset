@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/OSK-2021-Gamejam.unity
+    guid: 81cb6731087214867b200339785167e1
   m_configObjects: {}

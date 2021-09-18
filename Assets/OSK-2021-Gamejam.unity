@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -199,13 +199,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55142794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.2685892, y: -0, z: -0, w: 0.9632548}
+  m_LocalPosition: {x: 0, y: 7.45, z: -7.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 31.161, y: 0, z: 0}
 --- !u!1 &82277272
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +218,7 @@ GameObject:
   - component: {fileID: 82277275}
   - component: {fileID: 82277274}
   - component: {fileID: 82277273}
+  - component: {fileID: 82277277}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -301,6 +302,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &82277277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82277272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fcd5c1303053c24885fd4547c0d07c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    score: 0
+  mobData:
+    hp: 0
+    arive: 1
 --- !u!1 &212757575
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,11 +453,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobData:
+<<<<<<< HEAD
     hp: 10
     arive: 0
   pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
   direction: {x: 0, y: 0, z: -1}
+=======
+    hp: 0
+    arive: 1
+  Bullet: {fileID: 1554024885}
+  syahoukou: {x: 0, y: 0, z: 0}
+>>>>>>> 3f53c255ac56b83668a5325cf7efbeb815476c7e
 --- !u!54 &316404752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -607,11 +632,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobData:
+<<<<<<< HEAD
     hp: 10
     arive: 0
   pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
   direction: {x: 0, y: 0, z: -1}
+=======
+    hp: 0
+    arive: 1
+  Bullet: {fileID: 1554024885}
+  syahoukou: {x: 0, y: 0, z: 0}
+>>>>>>> 3f53c255ac56b83668a5325cf7efbeb815476c7e
 --- !u!54 &782243991
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -798,11 +830,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobData:
+<<<<<<< HEAD
     hp: 10
     arive: 0
   pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
   direction: {x: 0, y: 0, z: -1}
+=======
+    hp: 0
+    arive: 1
+  Bullet: {fileID: 1554024885}
+  syahoukou: {x: 0, y: 0, z: 0}
+>>>>>>> 3f53c255ac56b83668a5325cf7efbeb815476c7e
 --- !u!1 &1816116793
 GameObject:
   m_ObjectHideFlags: 0
