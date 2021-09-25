@@ -126,7 +126,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adaddddefb4ad4fbb9cddccec5eaa222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
+  mobData:
+    hp: 0
+    arive: 0
+  pos: {x: 0, y: 0, z: 0}
+  Bullet: {fileID: 6595713103628054470, guid: ef25eedce9b3549a8a2cdbe9a4f71471, type: 3}
+  direction: {x: 0, y: 0, z: -10}
 --- !u!114 &6222240696199322236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,4 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735f30c59fae446fabbd8517f35b7f93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 0
+  Left: 0
+  speedX: 0.5
+  Count: 20

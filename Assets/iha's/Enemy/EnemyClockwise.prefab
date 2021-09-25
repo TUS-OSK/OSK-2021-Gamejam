@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7997689298199171667}
   - component: {fileID: 3664589526935487377}
   - component: {fileID: 5396560647577252884}
+  - component: {fileID: -2070815232182026014}
+  - component: {fileID: -4665238736644313215}
   m_Layer: 0
   m_Name: EnemyClockwise
   m_TagString: Untagged
@@ -95,3 +97,36 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2070815232182026014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531021880308272474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da9ee713b40254696a7de5412b6db403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AntiClockwise: 0
+  speed: 1
+  radius: 0.5
+--- !u!114 &-4665238736644313215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531021880308272474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adaddddefb4ad4fbb9cddccec5eaa222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mobData:
+    hp: 0
+    arive: 0
+  pos: {x: 0, y: 0, z: 0}
+  Bullet: {fileID: 6595713103628054470, guid: ef25eedce9b3549a8a2cdbe9a4f71471, type: 3}
+  direction: {x: 0, y: 0, z: -10}
