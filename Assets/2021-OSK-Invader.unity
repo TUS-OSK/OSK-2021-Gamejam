@@ -470,18 +470,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobData:
-<<<<<<< HEAD
     hp: 10
     arive: 0
   pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
   direction: {x: 0, y: 0, z: -1}
-=======
-    hp: 0
-    arive: 1
-  Bullet: {fileID: 1554024885}
-  syahoukou: {x: 0, y: 0, z: 0}
->>>>>>> 3f53c255ac56b83668a5325cf7efbeb815476c7e
 --- !u!54 &316404752
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -649,18 +642,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobData:
-<<<<<<< HEAD
     hp: 10
     arive: 0
   pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
   direction: {x: 0, y: 0, z: -1}
-=======
-    hp: 0
-    arive: 1
-  Bullet: {fileID: 1554024885}
-  syahoukou: {x: 0, y: 0, z: 0}
->>>>>>> 3f53c255ac56b83668a5325cf7efbeb815476c7e
 --- !u!54 &782243991
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -847,18 +833,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mobData:
-<<<<<<< HEAD
     hp: 10
     arive: 0
   pos: {x: 0, y: 0, z: 0}
   Bullet: {fileID: 1554024885}
   direction: {x: 0, y: 0, z: -1}
-=======
-    hp: 0
-    arive: 1
-  Bullet: {fileID: 1554024885}
-  syahoukou: {x: 0, y: 0, z: 0}
->>>>>>> 3f53c255ac56b83668a5325cf7efbeb815476c7e
 --- !u!1 &1816116793
 GameObject:
   m_ObjectHideFlags: 0
