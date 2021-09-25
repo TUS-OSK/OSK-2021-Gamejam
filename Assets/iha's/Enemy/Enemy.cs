@@ -7,6 +7,7 @@ public class Enemy : SuperEnemy
     public ObjectFlyer<SuperItem> flyer;
     public Vector3 pos;
 
+    public SuperPlayer player;
     public GameObject Bullet;
     float time = 0f;
 
@@ -38,5 +39,16 @@ public class Enemy : SuperEnemy
                 this.gameObject.SetActive(false);
             }
         }
+    }
+
+    public override MobData Touch(SuperItem item)
+    {
+        if (item.itemData.hitEnemys) mobData.Damage(item.itemData.damage);
+        item.checkHitObject(mobData);
+
+        player.playerData.score += item.itemData.score;
+
+        return mobData;
+
     }
 }

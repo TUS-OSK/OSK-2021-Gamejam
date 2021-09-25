@@ -17,11 +17,10 @@ public class EnemyController : SuperEnemy
     }
     void OnTriggerEnter(Collider collision)
     {
-        SuperPlayer Player = collision.gameObject.GetComponent<SuperPlayer>();
-        if (Player != null)
+        SuperItem item = collision.gameObject.GetComponent<SuperItem>();
+        if (item != null)
         {
-            //よく分からんのでコメントアウトしておいたよ
-            // mobData.Touch();
+            this.Touch(item);
         }
 
     }
