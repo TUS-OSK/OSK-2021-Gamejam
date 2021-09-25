@@ -8,7 +8,7 @@ public class PlayerController : SuperPlayer
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class PlayerController : SuperPlayer
             transform.position += new Vector3(0, 0, -0.1f);
         }
 
-        if (player.mobData.hp <= 0)
+        if (mobData.hp <= 0)
         {
             SceneManager.LoadScene("EndScene");
         }
