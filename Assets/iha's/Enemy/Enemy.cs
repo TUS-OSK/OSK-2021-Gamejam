@@ -10,6 +10,7 @@ public class Enemy : SuperEnemy
         
     }
 
+    public SuperPlayer player; 
     public GameObject Bullet;
     float time = 0f;
     [SerializeField] private Vector3 syahoukou;
@@ -34,6 +35,17 @@ public class Enemy : SuperEnemy
             this.Touch(item);
         }
 //        Debug.Log("test");
+    }
+
+    public override MobData Touch(SuperItem item)
+    {
+        if (item.itemData.hitEnemys) mobData.Damage(item.itemData.damage);
+        item.checkHitObject(mobData);
+
+        player.playerData.score += item.itemData.score;
+
+        return mobData;
+
     }
 
 
